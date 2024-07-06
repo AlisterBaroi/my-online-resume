@@ -610,7 +610,16 @@ def achievements(item, item2, item3, item4, item5, item6):
         if st.button("Close"):
             st.rerun()
     else:
-        st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
+        btns_finnal = st.columns([2, 1])
+        btns_finnal[0].link_button(
+            "View Achievement ➚",
+            url=item6,
+            type="primary",
+            use_container_width=True,
+        )
+        if btns_finnal[1].button("Close", use_container_width=True):
+
+            st.rerun()
 
 
 # def replace_in_file(filename, oldvalue, newvalue, findvalue):
