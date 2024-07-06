@@ -2,11 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Alister Baroi",
-    page_icon=":page_facing_up:",
-    layout="centered",
-    initial_sidebar_state="expanded",
-    # menu_items=None
+    page_title="Alister Baroi", page_icon=":page_facing_up:", layout="centered"
 )
 
 
