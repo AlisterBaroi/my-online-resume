@@ -1,0 +1,71 @@
+<style>
+  .container {
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    color: white;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 0.5rem;
+  }
+
+  .container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5rem;
+  }
+
+  .p {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    padding: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    background-color: rgb(19, 23, 32);
+  }
+
+  .btn {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0.25rem 1.75rem;
+    line-height: 2;
+    color: rgb(61, 213, 109);
+    background-color: rgb(19, 23, 32);
+    border-radius: 0.6rem;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .btn:hover {
+    background-color: rgb(19, 23, 32);
+    border: 1px solid rgb(61, 213, 109);
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    /* For mobile phones: */
+    [class*="btn"] {
+      top: 70%;
+    }
+
+    [class*="p"] {
+      top: 20%;
+      left: 45%;
+    }
+  }
+</style>
+
+<div class="container">
+  <img src="https://raw.githubusercontent.com/AlisterBaroi/my-online-resume/main/assets/github_banner.png"
+    alt="GitHub Profile" style="width:100%">
+  <p class="p">To see all my projects, checkout my GitHub profile.</p>
+  <!-- <button class="btn" href="https://github.com/AlisterBaroi">View GitHub &#x279A;</button> -->
+  <button class="btn" onclick="window.open('https://github.com/AlisterBaroi', '_blank')">View GitHub &#x279A;</button>
+</div>
