@@ -16,7 +16,7 @@ def main():
         "Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!"
     )
     st.markdown(
-        ":red[Note:] To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚",
+        ":red[Note:] :gray[To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚]",
         unsafe_allow_html=True,
     )
     # Dark mode
