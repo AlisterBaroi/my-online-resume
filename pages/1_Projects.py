@@ -9,10 +9,10 @@ st.set_page_config(
 def main():
     st.title("Projects —")
     st.markdown("<style>hr{margin: 0;}</style>", unsafe_allow_html=True)
-    st.divider()
     st.write(
         "Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!"
     )
+    st.divider()
     st.markdown(
         ":gray[**Note:** To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚]",
         unsafe_allow_html=True,
