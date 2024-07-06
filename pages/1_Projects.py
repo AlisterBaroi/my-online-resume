@@ -19,6 +19,7 @@ def main():
         ":red[Note:] :gray[To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚]",
         unsafe_allow_html=True,
     )
+    st.divider()
     # Dark mode
     with st.sidebar:
         if st.toggle("Dark Mode", value=True) is False:
