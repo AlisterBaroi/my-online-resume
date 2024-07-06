@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Alister Animesh Baroi - Portfolio Website",
     page_icon=":page_facing_up:",
     layout="centered",
-    initial_sidebar_state="collapsed",
+    # initial_sidebar_state="collapsed",
     # menu_items=None
 )
 st._config.set_option("theme.base", "dark")
