@@ -15,7 +15,10 @@ def main():
     st.write(
         "Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!"
     )
-    st.subheader(":red[Work in progress...]")
+    st.markdown(
+        ":red[Note:] To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚",
+        unsafe_allow_html=True,
+    )
     # Dark mode
     with st.sidebar:
         if st.toggle("Dark Mode", value=True) is False:
@@ -384,13 +387,10 @@ def main():
                 a["video"],
             )
 
-    # st.write(f"Hi { st.page_link('', label=':blue[GitHub ➚]') }")
-    st.markdown(
-        "To see the full list of my projects, visit my [GitHub account](https://github.com/alisterbaroi) ➚",
-        unsafe_allow_html=True,
-    )
-    # with st.container(border=True):
-    #     st.image("./assets/github_banner.png")
+    # st.markdown(
+    #     "To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚",
+    #     unsafe_allow_html=True,
+    # )
 
     with st.container(border=False):
         with open("./pages/github_banner.html", "r") as f:
