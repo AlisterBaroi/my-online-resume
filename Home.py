@@ -484,10 +484,10 @@ def main():
             use_container_width=True,
         )
 
-    st.page_link(
-        "pages/1_Projects.py",
-        label="To see the list of all my projects in details visit :blue[projects page]",
-    )
+    proj_col = st.columns([1.25, 1])
+    proj_col[0].write("To see the list of all my relavant projects in details, visit:")
+    proj_col[1].page_link("pages/1_Projects.py", label=":blue[Projects Page ➚]")
+    # ss = proj_col[1].markdown("[click here](/Projects) ➚")
 
     # Achievements Section
     st.subheader("Achievements", anchor=False)
