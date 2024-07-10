@@ -10,11 +10,11 @@ def main():
     st.title("Projects —")
     st.markdown("<style>hr{margin: 0;}</style>", unsafe_allow_html=True)
     st.write(
-        "Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!"
+        "Here are all my relavant AI/ML, Web Development, and cloud projects — Enjoy!!"
     )
     st.divider()
     st.markdown(
-        ":gray[**Note:** To see the full list of my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚]",
+        ":gray[**Note:** To see the full list of all my projects, visit my [GitHub profile](https://github.com/alisterbaroi) ➚]",
         unsafe_allow_html=True,
     )
     # Dark mode

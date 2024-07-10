@@ -21,12 +21,14 @@
 
   .p {
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 5%;
-    padding: 5px;
+    padding: 7px;
+    max-width: 320px;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     background-color: rgba(19, 23, 32, 0.8);
+    border-radius: 0.2rem;
   }
 
   .btn {
@@ -60,8 +62,10 @@
     }
 
     [class*="p"] {
-      top: 15%;
+      top: 5%;
       left: 45%;
+      font-size: 0.85rem;
+
     }
   }
 </style>
@@ -69,7 +73,7 @@
 <div class="container">
   <img src="https://raw.githubusercontent.com/AlisterBaroi/my-online-resume/main/assets/github_banner.png"
     alt="GitHub Profile" style="width:100%">
-  <p class="p">To see all my projects, checkout my GitHub profile.</p>
+  <p class="p">To see a full list of all my projects, checkout my GitHub profile.</p>
   <!-- <button class="btn" href="https://github.com/AlisterBaroi">View GitHub &#x279A;</button> -->
   <button class="btn" onclick="window.open('https://github.com/AlisterBaroi', '_blank')">View GitHub &#x279A;</button>
 </div>
