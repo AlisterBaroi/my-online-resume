@@ -141,7 +141,9 @@ def report(item):
             )
 
         if st.form_submit_button(
-            "Submit feedback" if item == "report_feedback" else "Report issue"
+            "Submit feedback" if item == "report_feedback" else "Report issue",
+            help="Form still under development",
+            disabled=True,  # Disabled submissionm button in the form
         ):
             st.session_state.reported = {"item": item}
             st.rerun()
