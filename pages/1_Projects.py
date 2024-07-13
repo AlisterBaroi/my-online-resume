@@ -48,6 +48,35 @@ def main():
             unsafe_allow_html=True,
         )
 
+    # Project: Terraform VPN Server
+    with st.container(border=True):
+        jobcol = st.columns([2, 5, 2])
+        a = {
+            "name": "Terraform VPN Server",
+            "tech": "HCL, Terraform, GCloud SDK",
+            "date": "02/2024",
+            "platform": "Linux, Google Cloud Platform, Docker",
+            "des": "Terraform Infrastructure-as-Code (IaC) project to deploy WireGuard VPN Server (VM, Container Optimized OS) on Google Cloud Platform (GCP), and create VPN clients, for users to tunnel through — my very own private VPN.",
+            "link": "https://github.com/AlisterBaroi/terraform-vpn-server",
+            "image": "./assets/terraform_vpn.jpeg",
+            "video": None,
+        }
+        jobcol[0].write(a["name"])
+        jobcol[1].write(
+            f":gray[Infrastructure automation with Terraform, to deploy WireGuard VPN Server on Google Cloud. :green[Date: {a['date']}]]"
+        )
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="vpn"):
+            project(
+                a["name"],
+                a["date"],
+                a["tech"],
+                a["platform"],
+                a["des"],
+                a["link"],
+                a["image"],
+                a["video"],
+            )
+
     # Project: Resume Parser API
     with st.container(border=True):
         jobcol = st.columns([2, 5, 2])
